@@ -5,7 +5,7 @@ import java.net.Socket;
 public class Server {
     public static void main(String[] args) {
         try (ServerSocket serverSocket = new ServerSocket(1000)) {
-            System.out.println("Server is listening on port 8989");
+            System.out.println("Server is listening on port 1000");
             while (true) {
                 Socket clientSocket = serverSocket.accept();
                 System.out.println("Connected to client");
@@ -62,4 +62,3 @@ public class Server {
         clientSocket.close();
     }
 }
-
